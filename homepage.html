@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suvidha - Home</title>
   <link rel="stylesheet" href="styles_homepage.css" />
   <!-- Font Awesome Cdn Link -->
@@ -20,30 +21,31 @@
 
     <div class="header-icons">
       <div class="account">
-        <a href="./hack/src/Login.js">
           <img src="/images/profile-user.png" alt="">
           <h4>Username</h4>
-        </a>
       </div>
+      <img style="cursor: pointer;" src="/images/logout.png" alt="logout" class="logout_btn" title="logout"/>
     </div>
 
   </header>
   <div class="container">
+
     <nav>
       <div class="side_navbar">
         <span>Menu</span>
-        <a href="#" class="active">Home</a>
+        <a href="homepage.html" class="active">Home</a>
         <a href="hospital.html">Hospitals</a>
-        <a href="#">Food/Utilities</a>
-        <a href="#">Shelters</a>
+        <a href="foodutil.html">Food/Utilities</a>
+        <a href="shelter.html">Shelters</a>
         <a href="guides.html">Guides</a>
 
         <div class="links">
           <span>You want to...</span>
-          <a href="homepage.html">Seek Help</a>
+          <a href="homepage.html" class="active">Seek Help</a>
           <a href="wanthelp.html">Provide Help</a>
         </div>
       </div>
+      <div class="nav"></div>
     </nav>
 
     <div class="main-body">
@@ -153,5 +155,6 @@
       </div>
     </div>
   </div>
+  <script src="js/nav.js"></script>
 </body>
 </html>
